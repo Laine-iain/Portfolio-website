@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding-left: 100px;
+    flex-direction: column;
+    
+    background: #ffffff;
+  }
+
+  .left-align {
+    width: 1900px;
+    position: absolute;
+    }
+
+.flex {
+  width: 1500px;
+  display: flex;
+  object-position: left;
+  flex-flow: row wrap;
+  gap: 100px;
+
+  }
+  
+  .wrapper {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    margin: 50px 0;
+    
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    
+    transition: all 200ms ease-in-out;
+  }
+  
+  .image-wrapper {
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: contrast(300%) grayscale(100%);  
+    transition: all 200ms ease-in-out;
+  }
+  
+  img {
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    object-position: top;
+    
+    transition: all 200ms ease-in-out;
+  }
+  
+  .book-design-image {
+    object-position: center;
+  }
+  
+  .header-wrapper {
+    mix-blend-mode: exclusion (50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    left: 380px;
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+    
+    
+  }
+  
+  h1 {
+    position: relative;
+    bottom: 0;
+    height: 300px;
+    color: #fff;
+    font-size: 80px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    
+    transition: all 200ms ease-in-out;
+  }
+  
+  .wrapper:hover img {
+    transform: scale(2);
+    filter:grayscale(0%);
+  }
+  
+  .wrapper:hover h1 {
+    bottom: 300px;
+    width: 300px;
+    transform: scale(.4);
+    mix-blend-mode: normal;
+  }
+  
+  .wrapper:hover .image-wrapper {
+    width: 800px;
+    filter:grayscale(0%);
+  }

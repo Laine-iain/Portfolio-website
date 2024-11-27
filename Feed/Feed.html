@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Divs in a Row</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.box {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    align-items: center;
+    border-radius: 5rem ;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    transition: background-color 0.5s;
+    font-size: 3rem;
+    font-family: Quicksilver; 
+    src: url("path/Quicksilver.otf") format("opentype");
+    letter-spacing: 3px;
+}
+
+.box:hover {
+    display: flex;
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    align-items: center;
+    border-radius: 5rem ;
+    filter: grayscale(0%);
+}
+
+.box img {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 5rem ;
+}
+
+.text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h3 {
+    margin-bottom: 5px;
+}
+
+.text p {
+    margin-top: 0;
+}
+
+    @media screen and (max-width: 600px) {
+            
+        
+            .container{ 
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            }       
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Rä¶.png" alt="Image 1">
+            <div class="text">
+                <h3>Rä¶</h3>
+                <p>One of my fucking rap playlists cover.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="MISSION IMPOSSIBLE.png" alt="Image 2">
+            <div class="text">
+                <h3>M.I</h3>
+                <p>Love the lines that connect to the font.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="DeadpoolAndWolverine2.png" alt="Image 3">
+            <div class="text">
+                <h3>Hugh And Ryan</h3>
+                <p>WHEN YOU CALL MY NAME!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

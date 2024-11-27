@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+:root {
+  --dull: #ffffff;
+  --bright: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  line-height: 2;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+h2 {
+
+  color:#ffffff;
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--dull);
+}
+
+li {
+  color: #ffffff;
+}
+
+.arrow i {
+  display: none;
+}
+
+.arrow {
+  position:relative;
+	display: block;
+}
+
+li:focus {
+  outline: none;
+}
+
+li:hover .arrow,
+li:focus .arrow {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--bright);
+  animation: select .111s steps(1) infinite;
+}
+
+li:hover .arrow i,
+li:focus .arrow i { 
+  display: block;
+  position: absolute;
+  top: 0.50em; 
+  left: -6em;
+}
+
+@keyframes select {
+  0%, 50% {
+    color: var(--dull);
+  }
+  50%, 100% {
+    color: var(--bright);
+  }
+}
