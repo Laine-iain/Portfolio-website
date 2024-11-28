@@ -34,10 +34,19 @@ body {
     overflow: scroll;
     max-height: 500px;
     max-width: 500px;
-    align-items: row;
+    align-items: row; /* This currently doesn't do anything because you are not using display: flex*/
     white-space: nowrap;
     position: fixed;
     left: 0px;
+
+    /* codeInterface has a margin and padding of 25px while codeOutput does not. 
+    This is the immediate issue leading to the misalignment. If you just add 
+    the same padding and margin to .codeOutput it would look the same.
+    Since you are using align-items and then you are using left 0 fixed position,
+    I'm assuming I know what you're trying to do. I'm going to make a Links copy folder
+    and show you how I use display: flex
+    */
+
 }
 
 .oldiv {
